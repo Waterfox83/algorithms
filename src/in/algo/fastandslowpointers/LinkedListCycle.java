@@ -1,14 +1,5 @@
 package in.algo.fastandslowpointers;
 
-class ListNode {
-    int value = 0;
-    ListNode next;
-
-    ListNode(int value) {
-        this.value = value;
-    }
-}
-
 public class LinkedListCycle {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
