@@ -37,7 +37,7 @@ public class LinkedListCycle {
         return false;
     }
 
-    private static int cycleLength(ListNode head) {
+    public static int cycleLength(ListNode head) {
         ListNode slowPointer = head;
         ListNode fastPointer = head;
         int cycleLength = 0;

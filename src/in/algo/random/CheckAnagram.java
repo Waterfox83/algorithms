@@ -11,10 +11,11 @@ public class CheckAnagram {
     }
 
     private static boolean isAnagram(String originalString, String anagramString) {
-        //check length
+        //check length. For two strings to be anagrams, they should be same length
         if (originalString.length() != anagramString.length()) {
             return false;
         } else {
+            //ok lengths are same. Make a map of characters and the number of times they occur in base string
             Map<Character, Integer> characterCountMap = new HashMap<>();
             for (int i = 0; i < originalString.length(); i++) {
                 Character currentChar = originalString.charAt(i);
@@ -26,10 +27,10 @@ public class CheckAnagram {
                 }
             }
             //print the map
-            for (Character ch: characterCountMap.keySet()) {
+            /*for (Character ch: characterCountMap.keySet()) {
                 System.out.println(ch + " : " + characterCountMap.get(ch));
-            }
-//            Map<Character, Integer> characterCountMapForAnagram = new HashMap<>();
+            }*/
+            //Now check that the characters in the 'anagram' occur same number of times as base string
             for (int i = 0; i < anagramString.length(); i++) {
                 Character currentChar = anagramString.charAt(i);
                 if (!characterCountMap.containsKey(currentChar)) {
