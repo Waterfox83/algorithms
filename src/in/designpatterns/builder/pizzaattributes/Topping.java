@@ -1,4 +1,4 @@
-package in.algo.designpatterns.builder.pizzaattributes;
+package in.designpatterns.builder.pizzaattributes;
 
 public enum Topping {
 

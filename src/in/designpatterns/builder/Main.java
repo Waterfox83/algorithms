@@ -1,8 +1,8 @@
-package in.algo.designpatterns.builder;
+package in.designpatterns.builder;
 
-import in.algo.designpatterns.builder.pizzaattributes.Crust;
-import in.algo.designpatterns.builder.pizzaattributes.Size;
-import in.algo.designpatterns.builder.pizzaattributes.Topping;
+import in.designpatterns.builder.pizzaattributes.Crust;
+import in.designpatterns.builder.pizzaattributes.Size;
+import in.designpatterns.builder.pizzaattributes.Topping;
 
 public class Main {
     public static void main(String[] args) {

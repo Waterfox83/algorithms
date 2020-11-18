@@ -1,4 +1,4 @@
-package in.algo.designpatterns.decorator;
+package in.designpatterns.decorator;
 
 public class PizzaDecorator implements Pizza {
     Pizza pizza;

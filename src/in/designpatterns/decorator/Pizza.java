@@ -1,4 +1,4 @@
-package in.algo.designpatterns.decorator;
+package in.designpatterns.decorator;
 
 public interface Pizza {
     public String bakePizza();
