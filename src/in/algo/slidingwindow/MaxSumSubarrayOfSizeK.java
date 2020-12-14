@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//https://www.educative.io/courses/grokking-the-coding-interview/JPKr0kqLGNP
 public class MaxSumSubarrayOfSizeK {
 
     public static void main(String[] args) {
-        int arr[] = {1, 3, 2, 6, -1, 4, 1, 8, 2};
+        int[] arr = {1, 3, 2, 6, -1, 4, 1, 8, 2};
         int K = 5;
 //        iterativeAlgo(arr, K);
         slidingWindow(arr, K);
         System.out.println(findMaxSumSubArray(K, arr));
     }
 
-    private static void iterativeAlgo(int arr[], int K) {
+    private static void iterativeAlgo(int[] arr, int K) {
         int iteration = 0;
         double finalAverage = 0.0;
 
@@ -32,7 +33,7 @@ public class MaxSumSubarrayOfSizeK {
         System.out.println("Total avg: "+ finalAverage/K);
     }
 
-    private static void slidingWindow(int arr[], int K) {
+    private static void slidingWindow(int[] arr, int K) {
         double[] result = new double[arr.length - K + 1];
         double windowSum = 0;
         int windowStart = 0;

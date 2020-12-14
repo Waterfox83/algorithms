@@ -13,6 +13,8 @@ public class ReverseLinkedList {
         reverseLinkedList(head);
     }
 
+//    1->2->3->4->5->6
+
     private static void reverseLinkedList(ListNode head){
         ListNode current = head;
         ListNode previous = null;
